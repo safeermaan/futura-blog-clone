@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font: 14px 'Open Sans', sans-serif;
+}
+
+article p {
+    color: #505050;
+}
+
+.nav-item, .post-title a, .title, .recent-post-title {
+    font-family: 'Roboto Slab', serif;
+    color: #303030;
+}
+
+article, .widget, .main-navigation, .main-header {
+    background-color: #ffffff;
+}
+
+.post-title a {
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+.main-navigation {
+    height: 56px;
+    border-top: 1px solid #ebebeb;
+}
+
+.main-navigation .container,
+.main-navigation .row,
+.main-navigation .col-sm-12 {
+        height: 100%; /* Ensure full height for flex centering */
+}
+.nav {
+        height: 100%;
+}
+
+.main-navigation li .nav-link:hover {
+    color: #00ADA7; 
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+
+.nav-item .dropdown-menu {
+    display: block; /* Ensure the dropdown is part of the document flow */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflowing content */
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    visibility: visible; /* Make visible on hover */
+    opacity: 1; /* Full opacity */
+    max-height: 500px; /* Adjust this value as needed */
+    transform: translateY(0); /* Move to original position */
+}
+
+.nav-item.dropdown:hover .nav-link {
+    color: #00ADA7; /* Change color on hover if needed */
+}
+
+.main-navigation .nav li a {
+    color: #505050;
+    line-height: 4em;
+    display: block;
+    padding: 0 21px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+}
+
+
+.sidebar {
+    padding: 0px 15px;
+}
+
+.main-content {
+    padding: 0px 15px;
+}
+
+
+.title {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ebebeb;
+    position: relative; 
+    margin-bottom: 21px; 
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; 
+    left: 0; 
+    width: 90px;
+    height: 1px;
+    background: #00ADA7;
+}
+.widget {
+    padding: 21px 30px;
+    margin-bottom: 35px;
+}
+.btn {
+    padding: 7px 14px;
+    border-radius: 0%;
+}
+.btn-custom {
+    background-color: #00ADA7;
+    color: #ffffff;
+}
+.input-s {
+    padding: 7px 7px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    width: 100%;
+}
+.post-meta {
+    font-style: italic;
+    color: #959595;
+}
+.post-meta span a {
+    color: #00ADA7;
+    text-decoration: none;
+}
+.post-meta .author {
+    margin: 0 7px;
+}
+.post-meta .date {
+    margin: 0 7px;
+}
+.post-meta .comment-count {
+    margin-left: 7px;
+}
+.post .featured-media img {
+    width: 100%;
+    height: auto;
+}
+
+.post-footer {
+    border-top: 1px solid #ebebeb;
+}
+
+.featured-media .format-quote blockquote {
+    padding: 10px 20px;
+    font-size: 17.5px;
+}
+.post .featured-media.no-image {
+    background-color: #00ADA7;
+}
+
+
+.fa-brands {
+    padding: 6px;
+    color:#959595;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    margin: 3px;
+}
+.fa-brands:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #00ADA7;
+}
+.details {
+    margin-left: 112px;
+}
+.text-custom {
+    color: #00ADA7;
+    text-decoration: none;
+}
+.search-btn {
+    border: none;
+    padding: 7px 14px;
+    margin-left: 4.2px;
+}
+.btn-custom {
+    font-size: 14px;
+    background-color: #00ADA7;
+    color: #ffffff;
+}
+
+.categories li {
+    border-bottom: 1px solid #ebebeb;
+    height: 46px;
+}
+
+.main-footer {
+    padding: 35px 0px 0px;
+}
+
+.footer-color {
+    background-color: #202020;
+    color: #959595;
+}
+
+.cloud-border {
+    border: 1px solid #303030;
+}
+
+.main-footer .widget a:hover {
+    background-color: #00ADA7;
+    color: #ffffff;
+}
+
+.copyright {
+    background-color: #111111;
+    color: #ffffff;
+}
+.copyright a {
+    color: #00ADA7;
+}
